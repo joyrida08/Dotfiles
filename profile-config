@@ -1,0 +1,27 @@
+#!/bin/sh
+
+state=$(sudo virsh domstate win7)
+ETHCONN=$(sudo nmcli -t --fields DEVICE,STATE,CONNECTION d | awk '{FS=":"} {if ($1=="eno1") print $2}')
+
+function undocked(){
+	echo "nothing to do here"   
+}
+
+function docked(){
+	
+	echo "Switching to external monitors"
+	xrandr --output DP1-1 --primary --preferred --auto --left-of DP1-3 --auto
+	xrandr --output eDP1 --off
+	[[ "$state" == "running" ]] && echo "already running"
+	[[ "$state" == "shut off" ]] && startvirt
+}
+
+function startvirt(){
+#	$(sudo virsh start win7)
+#	$(sudo virt-viewer -f win7 &)
+	echo "started"
+}
+
+
+[[ $ETHCONN == "connected" ]] && docked 
+[[ $ETHCONN == "disconnected" ]] && undocked
