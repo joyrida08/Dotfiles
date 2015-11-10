@@ -1,0 +1,7 @@
+[Default Applications]
+inode/directory=pcmanfm.desktop
+x-scheme-handler/mailto=sylpheed.desktop
+
+[Added Associations]
+inode/directory=pcmanfm.desktop;
+x-scheme-handler/mailto=sylpheed.desktop;

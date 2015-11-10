@@ -1,0 +1,346 @@
+Unable to enable plugin!
+You must have read and write access to watch folder.
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/plugins/init.py", line 48, in enable
+    self.plugin.enable()
+  File "/usr/lib/python2.7/site-packages/deluge/plugins/AutoAdd-1.4-py2.7.egg/autoadd/core.py", line 113, in enable
+    self.add({'path':self.core_cfg['autoadd_location'], 'enabled':True})
+  File "/usr/lib/python2.7/site-packages/deluge/plugins/AutoAdd-1.4-py2.7.egg/autoadd/core.py", line 384, in add
+    CheckInput(os.access(abswatchdir, os.R_OK|os.W_OK), "You must have read and write access to watch folder.")
+  File "/usr/lib/python2.7/site-packages/deluge/plugins/AutoAdd-1.4-py2.7.egg/autoadd/core.py", line 87, in CheckInput
+    raise Exception(message)
+Exception: You must have read and write access to watch folder.
+There is a deluge daemon running with this config directory!
+You cannot run multiple daemons with the same config directory set.
+If you believe this is an error, you can force a start by deleting /home/rigrassm/.config/deluge/deluged.pid.
+Exception calling RPC request: You must have read and write access to watch folder.
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/core/rpcserver.py", line 299, in dispatch
+    ret = self.factory.methods[method](*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/deluge/plugins/AutoAdd-1.4-py2.7.egg/autoadd/core.py", line 384, in add
+    CheckInput(os.access(abswatchdir, os.R_OK|os.W_OK), "You must have read and write access to watch folder.")
+  File "/usr/lib/python2.7/site-packages/deluge/plugins/AutoAdd-1.4-py2.7.egg/autoadd/core.py", line 87, in CheckInput
+    raise Exception(message)
+Exception: You must have read and write access to watch folder.
+Exception calling RPC request: You must have read and write access to watch folder.
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/core/rpcserver.py", line 299, in dispatch
+    ret = self.factory.methods[method](*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/deluge/plugins/AutoAdd-1.4-py2.7.egg/autoadd/core.py", line 384, in add
+    CheckInput(os.access(abswatchdir, os.R_OK|os.W_OK), "You must have read and write access to watch folder.")
+  File "/usr/lib/python2.7/site-packages/deluge/plugins/AutoAdd-1.4-py2.7.egg/autoadd/core.py", line 87, in CheckInput
+    raise Exception(message)
+Exception: You must have read and write access to watch folder.
+Exception calling RPC request: You must have read and write access to watch folder.
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/core/rpcserver.py", line 299, in dispatch
+    ret = self.factory.methods[method](*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/deluge/plugins/AutoAdd-1.4-py2.7.egg/autoadd/core.py", line 384, in add
+    CheckInput(os.access(abswatchdir, os.R_OK|os.W_OK), "You must have read and write access to watch folder.")
+  File "/usr/lib/python2.7/site-packages/deluge/plugins/AutoAdd-1.4-py2.7.egg/autoadd/core.py", line 87, in CheckInput
+    raise Exception(message)
+Exception: You must have read and write access to watch folder.
+Exception calling RPC request: Path does not exist.
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/core/rpcserver.py", line 299, in dispatch
+    ret = self.factory.methods[method](*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/deluge/plugins/AutoAdd-1.4-py2.7.egg/autoadd/core.py", line 383, in add
+    CheckInput(os.path.isdir(abswatchdir) , _("Path does not exist."))
+  File "/usr/lib/python2.7/site-packages/deluge/plugins/AutoAdd-1.4-py2.7.egg/autoadd/core.py", line 87, in CheckInput
+    raise Exception(message)
+Exception: Path does not exist.
+Login failed (ClientIP 127.0.0.1)
+Login failed (ClientIP 127.0.0.1)
+There is a deluge daemon running with this config directory!
+You cannot run multiple daemons with the same config directory set.
+If you believe this is an error, you can force a start by deleting /home/rigrassm/.config/deluge/deluged.pid.
+Login failed (ClientIP 127.0.0.1)
+Login failed (ClientIP 127.0.0.1)
+Login failed (ClientIP 127.0.0.1)
+There is a deluge daemon running with this config directory!
+You cannot run multiple daemons with the same config directory set.
+If you believe this is an error, you can force a start by deleting /home/rigrassm/.config/deluge/deluged.pid.
+Unable to enable plugin!
+Component already registered with name DelugeWeb
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/plugins/init.py", line 48, in enable
+    self.plugin.enable()
+  File "/usr/lib/python2.7/site-packages/deluge/plugins/WebUi-0.1-py2.7.egg/webui/core.py", line 59, in enable
+    self.start()
+  File "/usr/lib/python2.7/site-packages/deluge/plugins/WebUi-0.1-py2.7.egg/webui/core.py", line 93, in start
+    self.server = server.DelugeWeb()
+  File "/usr/lib/python2.7/site-packages/deluge/ui/web/server.py", line 600, in __init__
+    super(DelugeWeb, self).__init__("DelugeWeb")
+  File "/usr/lib/python2.7/site-packages/deluge/component.py", line 97, in __init__
+    _ComponentRegistry.register(self)
+  File "/usr/lib/python2.7/site-packages/deluge/component.py", line 241, in register
+    "Component already registered with name %s" % name)
+ComponentAlreadyRegistered: Component already registered with name DelugeWeb
+Exception calling RPC request: 'CorePlugin.WebUi'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/core/rpcserver.py", line 299, in dispatch
+    ret = self.factory.methods[method](*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/deluge/core/core.py", line 528, in enable_plugin
+    self.pluginmanager.enable_plugin(plugin)
+  File "/usr/lib/python2.7/site-packages/deluge/core/pluginmanager.py", line 82, in enable_plugin
+    super(PluginManager, self).enable_plugin(name)
+  File "/usr/lib/python2.7/site-packages/deluge/pluginmanagerbase.py", line 151, in enable_plugin
+    component.start([instance.plugin._component_name])
+  File "/usr/lib/python2.7/site-packages/deluge/component.py", line 290, in start
+    if self.components[name]._component_depend:
+KeyError: 'CorePlugin.WebUi'
+Unable to enable plugin!
+Component already registered with name Css
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/plugins/init.py", line 48, in enable
+    self.plugin.enable()
+  File "/usr/lib/python2.7/site-packages/deluge/plugins/WebUi-0.1-py2.7.egg/webui/core.py", line 59, in enable
+    self.start()
+  File "/usr/lib/python2.7/site-packages/deluge/plugins/WebUi-0.1-py2.7.egg/webui/core.py", line 93, in start
+    self.server = server.DelugeWeb()
+  File "/usr/lib/python2.7/site-packages/deluge/ui/web/server.py", line 630, in __init__
+    self.top_level = TopLevel()
+  File "/usr/lib/python2.7/site-packages/deluge/ui/web/server.py", line 456, in __init__
+    self.putChild("css", LookupResource("Css", rpath("css")))
+  File "/usr/lib/python2.7/site-packages/deluge/ui/web/server.py", line 246, in __init__
+    component.Component.__init__(self, name)
+  File "/usr/lib/python2.7/site-packages/deluge/component.py", line 97, in __init__
+    _ComponentRegistry.register(self)
+  File "/usr/lib/python2.7/site-packages/deluge/component.py", line 241, in register
+    "Component already registered with name %s" % name)
+ComponentAlreadyRegistered: Component already registered with name Css
+Exception calling RPC request: 'CorePlugin.WebUi'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/core/rpcserver.py", line 299, in dispatch
+    ret = self.factory.methods[method](*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/deluge/core/core.py", line 528, in enable_plugin
+    self.pluginmanager.enable_plugin(plugin)
+  File "/usr/lib/python2.7/site-packages/deluge/core/pluginmanager.py", line 82, in enable_plugin
+    super(PluginManager, self).enable_plugin(name)
+  File "/usr/lib/python2.7/site-packages/deluge/pluginmanagerbase.py", line 151, in enable_plugin
+    component.start([instance.plugin._component_name])
+  File "/usr/lib/python2.7/site-packages/deluge/component.py", line 290, in start
+    if self.components[name]._component_depend:
+KeyError: 'CorePlugin.WebUi'
+Unable to enable plugin!
+Component already registered with name DelugeWeb
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/plugins/init.py", line 48, in enable
+    self.plugin.enable()
+  File "/usr/lib/python2.7/site-packages/deluge/plugins/WebUi-0.1-py2.7.egg/webui/core.py", line 59, in enable
+    self.start()
+  File "/usr/lib/python2.7/site-packages/deluge/plugins/WebUi-0.1-py2.7.egg/webui/core.py", line 93, in start
+    self.server = server.DelugeWeb()
+  File "/usr/lib/python2.7/site-packages/deluge/ui/web/server.py", line 600, in __init__
+    super(DelugeWeb, self).__init__("DelugeWeb")
+  File "/usr/lib/python2.7/site-packages/deluge/component.py", line 97, in __init__
+    _ComponentRegistry.register(self)
+  File "/usr/lib/python2.7/site-packages/deluge/component.py", line 241, in register
+    "Component already registered with name %s" % name)
+ComponentAlreadyRegistered: Component already registered with name DelugeWeb
+Exception calling RPC request: 'CorePlugin.WebUi'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/core/rpcserver.py", line 299, in dispatch
+    ret = self.factory.methods[method](*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/deluge/core/core.py", line 528, in enable_plugin
+    self.pluginmanager.enable_plugin(plugin)
+  File "/usr/lib/python2.7/site-packages/deluge/core/pluginmanager.py", line 82, in enable_plugin
+    super(PluginManager, self).enable_plugin(name)
+  File "/usr/lib/python2.7/site-packages/deluge/pluginmanagerbase.py", line 151, in enable_plugin
+    component.start([instance.plugin._component_name])
+  File "/usr/lib/python2.7/site-packages/deluge/component.py", line 290, in start
+    if self.components[name]._component_depend:
+KeyError: 'CorePlugin.WebUi'
+Unable to enable plugin!
+Component already registered with name Icons
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/plugins/init.py", line 48, in enable
+    self.plugin.enable()
+  File "/usr/lib/python2.7/site-packages/deluge/plugins/WebUi-0.1-py2.7.egg/webui/core.py", line 59, in enable
+    self.start()
+  File "/usr/lib/python2.7/site-packages/deluge/plugins/WebUi-0.1-py2.7.egg/webui/core.py", line 93, in start
+    self.server = server.DelugeWeb()
+  File "/usr/lib/python2.7/site-packages/deluge/ui/web/server.py", line 630, in __init__
+    self.top_level = TopLevel()
+  File "/usr/lib/python2.7/site-packages/deluge/ui/web/server.py", line 459, in __init__
+    self.putChild("icons", LookupResource("Icons", rpath("icons")))
+  File "/usr/lib/python2.7/site-packages/deluge/ui/web/server.py", line 246, in __init__
+    component.Component.__init__(self, name)
+  File "/usr/lib/python2.7/site-packages/deluge/component.py", line 97, in __init__
+    _ComponentRegistry.register(self)
+  File "/usr/lib/python2.7/site-packages/deluge/component.py", line 241, in register
+    "Component already registered with name %s" % name)
+ComponentAlreadyRegistered: Component already registered with name Icons
+Exception calling RPC request: 'CorePlugin.WebUi'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/core/rpcserver.py", line 299, in dispatch
+    ret = self.factory.methods[method](*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/deluge/core/core.py", line 528, in enable_plugin
+    self.pluginmanager.enable_plugin(plugin)
+  File "/usr/lib/python2.7/site-packages/deluge/core/pluginmanager.py", line 82, in enable_plugin
+    super(PluginManager, self).enable_plugin(name)
+  File "/usr/lib/python2.7/site-packages/deluge/pluginmanagerbase.py", line 151, in enable_plugin
+    component.start([instance.plugin._component_name])
+  File "/usr/lib/python2.7/site-packages/deluge/component.py", line 290, in start
+    if self.components[name]._component_depend:
+KeyError: 'CorePlugin.WebUi'
+Unable to enable plugin!
+Component already registered with name DelugeWeb
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/plugins/init.py", line 48, in enable
+    self.plugin.enable()
+  File "/usr/lib/python2.7/site-packages/deluge/plugins/WebUi-0.1-py2.7.egg/webui/core.py", line 59, in enable
+    self.start()
+  File "/usr/lib/python2.7/site-packages/deluge/plugins/WebUi-0.1-py2.7.egg/webui/core.py", line 93, in start
+    self.server = server.DelugeWeb()
+  File "/usr/lib/python2.7/site-packages/deluge/ui/web/server.py", line 600, in __init__
+    super(DelugeWeb, self).__init__("DelugeWeb")
+  File "/usr/lib/python2.7/site-packages/deluge/component.py", line 97, in __init__
+    _ComponentRegistry.register(self)
+  File "/usr/lib/python2.7/site-packages/deluge/component.py", line 241, in register
+    "Component already registered with name %s" % name)
+ComponentAlreadyRegistered: Component already registered with name DelugeWeb
+Exception calling RPC request: 'CorePlugin.WebUi'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/core/rpcserver.py", line 299, in dispatch
+    ret = self.factory.methods[method](*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/deluge/core/core.py", line 528, in enable_plugin
+    self.pluginmanager.enable_plugin(plugin)
+  File "/usr/lib/python2.7/site-packages/deluge/core/pluginmanager.py", line 82, in enable_plugin
+    super(PluginManager, self).enable_plugin(name)
+  File "/usr/lib/python2.7/site-packages/deluge/pluginmanagerbase.py", line 151, in enable_plugin
+    component.start([instance.plugin._component_name])
+  File "/usr/lib/python2.7/site-packages/deluge/component.py", line 290, in start
+    if self.components[name]._component_depend:
+KeyError: 'CorePlugin.WebUi'
+Password does not match
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/core/rpcserver.py", line 260, in dispatch
+    ret = component.get("AuthManager").authorize(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/deluge/core/authmanager.py", line 93, in authorize
+    raise BadLoginError("Password does not match")
+BadLoginError: Password does not match
+Password does not match
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/core/rpcserver.py", line 260, in dispatch
+    ret = component.get("AuthManager").authorize(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/deluge/core/authmanager.py", line 93, in authorize
+    raise BadLoginError("Password does not match")
+BadLoginError: Password does not match
+Password does not match
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/core/rpcserver.py", line 260, in dispatch
+    ret = component.get("AuthManager").authorize(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/deluge/core/authmanager.py", line 93, in authorize
+    raise BadLoginError("Password does not match")
+BadLoginError: Password does not match
+Password does not match
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/core/rpcserver.py", line 260, in dispatch
+    ret = component.get("AuthManager").authorize(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/deluge/core/authmanager.py", line 93, in authorize
+    raise BadLoginError("Password does not match")
+BadLoginError: Password does not match
+Password does not match
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/core/rpcserver.py", line 260, in dispatch
+    ret = component.get("AuthManager").authorize(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/deluge/core/authmanager.py", line 93, in authorize
+    raise BadLoginError("Password does not match")
+BadLoginError: Password does not match
+Password does not match
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/core/rpcserver.py", line 260, in dispatch
+    ret = component.get("AuthManager").authorize(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/deluge/core/authmanager.py", line 93, in authorize
+    raise BadLoginError("Password does not match")
+BadLoginError: Password does not match
+Password does not match
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/core/rpcserver.py", line 260, in dispatch
+    ret = component.get("AuthManager").authorize(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/deluge/core/authmanager.py", line 93, in authorize
+    raise BadLoginError("Password does not match")
+BadLoginError: Password does not match
+Password does not match
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/core/rpcserver.py", line 260, in dispatch
+    ret = component.get("AuthManager").authorize(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/deluge/core/authmanager.py", line 93, in authorize
+    raise BadLoginError("Password does not match")
+BadLoginError: Password does not match
+Password does not match
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/core/rpcserver.py", line 260, in dispatch
+    ret = component.get("AuthManager").authorize(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/deluge/core/authmanager.py", line 93, in authorize
+    raise BadLoginError("Password does not match")
+BadLoginError: Password does not match
+Password does not match
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/core/rpcserver.py", line 260, in dispatch
+    ret = component.get("AuthManager").authorize(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/deluge/core/authmanager.py", line 93, in authorize
+    raise BadLoginError("Password does not match")
+BadLoginError: Password does not match
+Password does not match
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/core/rpcserver.py", line 260, in dispatch
+    ret = component.get("AuthManager").authorize(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/deluge/core/authmanager.py", line 93, in authorize
+    raise BadLoginError("Password does not match")
+BadLoginError: Password does not match
+Password does not match
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/core/rpcserver.py", line 260, in dispatch
+    ret = component.get("AuthManager").authorize(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/deluge/core/authmanager.py", line 93, in authorize
+    raise BadLoginError("Password does not match")
+BadLoginError: Password does not match
+Password does not match
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/core/rpcserver.py", line 260, in dispatch
+    ret = component.get("AuthManager").authorize(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/deluge/core/authmanager.py", line 93, in authorize
+    raise BadLoginError("Password does not match")
+BadLoginError: Password does not match
+Password does not match
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/core/rpcserver.py", line 260, in dispatch
+    ret = component.get("AuthManager").authorize(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/deluge/core/authmanager.py", line 93, in authorize
+    raise BadLoginError("Password does not match")
+BadLoginError: Password does not match
+Password does not match
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/core/rpcserver.py", line 260, in dispatch
+    ret = component.get("AuthManager").authorize(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/deluge/core/authmanager.py", line 93, in authorize
+    raise BadLoginError("Password does not match")
+BadLoginError: Password does not match
+Password does not match
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/core/rpcserver.py", line 260, in dispatch
+    ret = component.get("AuthManager").authorize(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/deluge/core/authmanager.py", line 93, in authorize
+    raise BadLoginError("Password does not match")
+BadLoginError: Password does not match
+Password does not match
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/core/rpcserver.py", line 260, in dispatch
+    ret = component.get("AuthManager").authorize(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/deluge/core/authmanager.py", line 93, in authorize
+    raise BadLoginError("Password does not match")
+BadLoginError: Password does not match
+Password does not match
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/deluge/core/rpcserver.py", line 260, in dispatch
+    ret = component.get("AuthManager").authorize(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/deluge/core/authmanager.py", line 93, in authorize
+    raise BadLoginError("Password does not match")
+BadLoginError: Password does not match
+Couldn't listen on any:58846: [Errno 98] Address already in use.
+Couldn't listen on any:58846: [Errno 98] Address already in use.
+Couldn't listen on any:58846: [Errno 98] Address already in use.
+Couldn't listen on any:58846: [Errno 98] Address already in use.
+Couldn't listen on any:58846: [Errno 98] Address already in use.

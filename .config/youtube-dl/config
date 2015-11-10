@@ -1,0 +1,4 @@
+--default-search ytsearch
+-o "/home/user/videos/%(title)s.%(ext)s"
+--username ricky.grassmuck
+--password Pfcgman14
